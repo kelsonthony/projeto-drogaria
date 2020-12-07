@@ -30,9 +30,21 @@
 		<property name="show_sql">true</property>
 
 		<!-- Drop and re-create the database schema on startup  create/update/validate-->
-		<property name="hbm2ddl.auto">create</property>
-
-		<!-- <mapping resource="org/hibernate/tutorial/domain/Event.hbm.xml" /> -->
+		<property name="hbm2ddl.auto">validate</property>
+		
+		<!-- Mapeando Entidades -->
+		<mapping class="br.com.kelsonthony.drogaria.domain.Cidade" />
+		<mapping class="br.com.kelsonthony.drogaria.domain.Cliente" />
+		<mapping class="br.com.kelsonthony.drogaria.domain.Estado" />
+		<mapping class="br.com.kelsonthony.drogaria.domain.Fabricante" />
+		<mapping class="br.com.kelsonthony.drogaria.domain.Funcionario" />
+		<mapping class="br.com.kelsonthony.drogaria.domain.Pessoa" />
+		<mapping class="br.com.kelsonthony.drogaria.domain.Produto" />
+		<mapping class="br.com.kelsonthony.drogaria.domain.Usuario" />
+		<mapping class="br.com.kelsonthony.drogaria.domain.Venda" />
+		<mapping class="br.com.kelsonthony.drogaria.domain.ItemVenda" />
+		
+		
 
 	</session-factory>
 
